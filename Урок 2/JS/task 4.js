@@ -1,15 +1,14 @@
-let A = prompt("Enter number:");
-let B = prompt("Enter number:");
-let sum = 0;
-while (A < B) {
-	A++;
+let a = +prompt("Enter number:");
+let b = +prompt("Enter number:");
 
-	if (A < B) {
-		sum += A;
+let sum = 0;
+
+while (a < b) {
+	sum += a;
+	a++;
+	if (a % 2) {
+		console.log("Нечетное число, между А и В:" + a);
 	}
 }
-document.write("Sum " + sum);
+console.log("Сума:" + sum);
 
-for (var i = 0; i < A && B; i += 3) {
-	document.write(i + "<br>");
-}
