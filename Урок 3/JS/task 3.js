@@ -5,7 +5,7 @@ let show = prompt("Enter fructs: " + fructs);
 let plusEl = prompt("Which one fructs: ");
 for (let i = 0; i <= fructs.length; i++) {
 	if (fructs[i] == show) {
-		fructs.splice(i + 2, 1, plusEl);
+		fructs.splice(i + 1, 0, plusEl);
 		break;
 	}
 	if (i == fructs.length) {
